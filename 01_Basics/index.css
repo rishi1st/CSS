@@ -22,3 +22,18 @@
           background-color: green;
           color: aliceblue;
   }
+  /* 5. Decendant Selector :- Selects all paragraph inside divs */
+        .post a{
+                color: purple;
+                background-color: yellow;
+        }
+        nav ul li a {
+                color: rgb(48, 2, 25);
+        }
+
+        /* 6. Adjecent sibling selector :- Heading3 that comes immediately after any paragraph */
+        p+h3{
+                text-decoration: underline;
+        }
+        /* 7. Child Selector :- Select All buttons which are direct children of spans */
+        
