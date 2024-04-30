@@ -1,0 +1,24 @@
+ /*  ------------------ Selectors  -------------------------*/
+ /* 1. Universal Selector : - To select everything in document */
+ *{
+          font-family: "Courier New";
+ }
+ /* 2. Element Selector : - Selects all element of the same types */
+
+  h1,
+  h3{
+          color: #b92b27;
+  }
+  /* 3. Id Selector : - Selects an element based on value of the element's id attribute */
+  #login{
+          background-color: #fff;
+  }
+  #signup{
+          background-color: #b92b27;
+          color: white;
+  }
+  /* 4. Class Selector : - Selects an element besed on their class attribute */
+  .upvote{
+          background-color: green;
+          color: aliceblue;
+  }
