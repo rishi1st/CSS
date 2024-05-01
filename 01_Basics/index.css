@@ -67,11 +67,12 @@
                   color: gold;
         }
         input[type = "radio"]{
-                color: red;
+                accent-color: red;
         }
         input[type = "radio"]:checked  + label{
-             color:red;
+             color:rgb(47, 18, 22);
              font-weight: bold;
+             accent-color: pink;
         }
         div:nth-of-type(1n){
                 background-color: aliceblue;
