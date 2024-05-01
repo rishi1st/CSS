@@ -28,7 +28,7 @@
                 background-color: yellow;
         }
         nav ul li a {
-                color: rgb(48, 2, 25);
+                color: rgb(8, 143, 222);
         }
 
         /* 6. Adjecent sibling selector :- Heading3 that comes immediately after any paragraph */
@@ -36,4 +36,69 @@
                 text-decoration: underline;
         }
         /* 7. Child Selector :- Select All buttons which are direct children of spans */
+        div > input{
+                background-color: peru;
+        }
+        /* 8. Attribute Selector : - Select element based on the presence or value of the given attribute */
+        input[type = "text"]{
+                color: blue;
+        }
+        input[type = "password"]{
+                color: darkred;
+        }
+        /*  We can use use with value of type */
+        input[type]{
+                color:darkorange;
+        }
+        /* Pseudo Class : - A keyword added to a selector that specifies special state of the selected elements(s) 
+         1. :hover
+         2. :active
+         3. :checked // use for radio's
+         4. :nth-of-type(n) // where n is the type of select positon's
+        */
+
+        .ans:hover{
+                background-color: blue;
+                color: white;
+                border-radius: 5px;
+        }
+        .ans:active{
+                  background-color: #b92b27;
+                  color: gold;
+        }
+        input[type = "radio"]{
+                color: red;
+        }
+        input[type = "radio"]:checked  + label{
+             color:red;
+             font-weight: bold;
+        }
+        div:nth-of-type(1n){
+                background-color: aliceblue;
+        }
+
+        /* ---------------------- Pseudeo Elements ------------  */
+
+        /* A keyword added to a selector that lets you a style a specific part of the selected element(s). */
+
+  /* ::first-letter
+ ::first-line
+ ::selection */
+
+   h1::first-letter{
+        color: blue;
+   }
+   .para::first-line{
+        color: darkblue;
+        font-weight: bold;
+   }
+   .para::selection{
+ background-color: red;
+   }
+   /* -------------- Selector Specificity  --------------------------  */
+
+    what is specificity ? 
+    Specificity is an algorithm that calculates the weight is applied to given css declaration.
+    !important > 1. Inline style (inner html)> 2. id > 3. class , attribute , pseudo - class > 4. element and pseudo element
+      
         
