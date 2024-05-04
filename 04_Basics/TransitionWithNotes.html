@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+          <style>
+                    /* Transitions :- enable you to define the transition between two state of an element. or,
+                    In CSS,a transition is a way to change property values smoothly over a specified duration. Here are the key properties of CSS transitions: 
+
+                    1. transition-property: Specifies the name of the CSS property the transition effect is for. You can specify multiple properties by separating them with commas1. 
+                    2. transition-duration: Defines the duration over which transitions should occur. You can specify the time in seconds (s) or milliseconds (ms)
+                    3. transition-timing-function: Describes how the intermediate values of the CSS properties being affected by a transition effect are calculated. This lets you establish an acceleration curve,
+                    so the speed of the transition can vary over its duration. 
+                    4. transition-delay: Allows you to define a delay before the transition starts. You can also specify this in seconds or milliseconds2. */
+                   
+
+
+                   .rishi{
+                    height: 400px;
+                    width: 400px;
+                     background-color: #f0f0f0;
+                     border: 2px solid blue;
+                     /*  transition property kaha lagana hai */
+                     transition-property: background-color , border;
+                     /* time  */
+                     transition-duration: 2s;
+                     /* timing- function */
+                     transition-timing-function:ease;
+                     /* delay  */
+                     transition-delay: 0.2s;
+                   }
+            .rishi:hover{
+                    background-color: black;
+                    border: 2px solid white;
+                    border-radius: 50%;
+            }
+          
+          
+          
+          /* 
+          1. ease: This is the default value. It starts off fast, then slows down, and speeds up again before coming to a stop. It’s like easing into and out of the transition1.
+          2. linear: The transition happens at a constant speed from start to end1.
+          3. ease-in: The transition starts slowly and then speeds up until it stops1.
+          4. ease-out: The transition starts quickly and then slows down as it comes to an end1.
+          5. ease-in-out: The transition starts and ends slowly, but is quicker in the middle
+          
+          */
+          
+          
+          
+          
+          </style>
+</head>
+
+<body>
+          <div class="rishi">
+
+          </div>
+
+</body>
+
+</html>
