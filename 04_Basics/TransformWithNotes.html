@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <title>Document</title>
           <style>
-                   /* 👉 Transform :  The transform property in CSS allows you to apply geometric transformations to an element, such as rotating, scaling, skewing, or translating it. 
+                    /* 👉 Transform :  The transform property in CSS allows you to apply geometric transformations to an element, such as rotating, scaling, skewing, or translating it. 
                     This can change the element’s position, size, and orientation without affecting the layout of other elements around it.
                     
                     Here’s a breakdown of the transform property:
@@ -14,27 +15,29 @@
                     2. scale(): Changes the size of an element. The values are unitless and represent a multiple of the element’s original size.
                     3. translate(): Moves an element from its original position. The values can be specified in length units (px, em, etc.) or percentages.
                     4. skew(): Tilts an element to the left or right, making it look like it’s leaning over. The angle of skew is specified in degrees or radians. */
-
-
-
-                    .rishi{
-                              width: 300px;
+                    .ram {
                               height: 300px;
-                              background-color: brown;
+                              width: 300px;
+                              background-color: blue;
                               margin: 0 auto;
+                              border-radius: 30px;
                               margin-top: 100px;
-                              transition:transform 1s ease-in-out;
-
+                              transition: all 3s ease-in-out 2s;
                     }
-                    .rishi:hover{
-                              transform: translate(50px , 50px)  skew(30deg);
-                              transform: rotate(360deg) scale(1);
-                              background-color: #59514b;
+
+                    .ram:hover {
+                              /* transform: rotate(45deg); */
+                              /* transform: scale(2); */
+                              /* transform: translateY(-500px); */
+                              /* transform: skewY(100deg); */
                     }
           </style>
 </head>
+<div class="ram"></div>
+
 <body>
-          
-          <div class="rishi"> </div>
+
+
 </body>
+
 </html>

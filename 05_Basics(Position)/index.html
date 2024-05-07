@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Position</title>
+
+          /*
+                ------------------- Position ------------------------
+                The position css property sets how an element is positioned in a document. 
+                The top , right , bottom and left properties determine the final location of positioned elements.
+                1. Static
+                2. Relative
+                3. Absolute
+                4. fixed
+
+                1. Position - Static :- The top, right , bottom and z-index properties have no effect. 
+                This is the default value.
+
+                2. position- Relative:- The offset is relative to itself based on the values of top, right , bottom and left.
+
+                3. positon -Absolute:- The element is removed from the normal document flow, and no space created for the element in the page layout. 
+                it is positioned relative to it's closest positioned ancestor, if any; otherwise   it is placed relative to  the initial containing block.
+
+                4. Posiotion - fixed :- The element is removed from the normal document flow, and no space is created for the element in the page layout.
+                it is positioned relative to the initial containing block established by the viewport.
+
+          */
+                    <style>
+                              div{
+                                        height: 100px;
+                                        width: 100px;
+                                        background-color: green;
+                                        text-align: center;
+                                        border: 2px solid black;
+                                        margin: 20px;
+                                        display: inline-block;
+                              }
+                              .static{
+                                        background-color: blue;
+                                        position: static;
+                                        top: 100px;
+                                        left: 100px;
+                              }
+                              .relative{
+                                        background-color: rgb(255, 60, 0);
+                                        position: relative;
+                                        top: 100px;
+                                        left: 100px;
+                              }
+                              .absolute{
+                                        background-color: rgb(73, 234, 14);
+                                        position: absolute;
+                                        top: 100px;
+                                        left: 100px;
+                              }
+                             .fixed{
+                              background-color: rgb(219, 225, 230);
+                                        position: fixed;
+                                        top: 150px;
+                                        left: 160px;
+                             }
+
+                    </style>
+</head>
+<body>
+           <section>
+                    <h2>Static Demo</h2>
+                    <div></div>
+                    <div class="static"></div>
+           </section>
+           <section>
+                    <h2>Relative Demo</h2>
+                    <div></div>
+                    <div class="relative">Relative</div>
+                    <div></div>
+           </section>
+           <section>
+                    <h2>Absolute Demo</h2>
+                    <div></div>
+                    <div class="absolute">Absolute</div>
+                    <div></div>
+           </section>
+           <section>
+                    <h2>fixed Demo</h2>
+                    <div></div>
+                    <div class="fixed">fixed</div>
+                    <div></div>
+           </section>
+</body>
+</html>
