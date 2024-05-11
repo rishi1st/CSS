@@ -3,9 +3,35 @@
 <head>
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Document</title>
+          <title>loader</title>
+          <style>
+                     body{
+                              display: flex;
+                              align-items: center;
+                              justify-content: center;
+                              height: 100vh;
+                              background-color: #000;
+                     }
+                    .one{
+                              /* border-top-left-radius: 3px solid #b3ffab;; */
+                              border-top: 1px solid #b3ffab;
+                              border-radius: 50%;
+                              height: 50px;
+                              width: 50px;
+                              animation: loader 1s linear 1s infinite;
+                              /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+                    }
+
+                    @keyframes loader {
+                              0%{
+                                     transform: rotate(0deg);
+                              }100%{
+                                        transform: rotate(360deg);
+                              }
+                    }
+          </style>
 </head>
 <body>
-          
+          <div class="load one "></div>
 </body>
 </html>
