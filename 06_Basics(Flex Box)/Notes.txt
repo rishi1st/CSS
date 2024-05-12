@@ -1,0 +1,75 @@
+1. flex-direction: This property defines the direction in which the flex items are placed in the flex container.
+.container {
+  display: flex;
+  flex-direction: row; /* Default value */
+}
+Other values include row-reverse, column, and column-reverse.
+
+2. justify-content: This aligns the flex items along the main axis of the container.
+.container {
+  display: flex;
+  justify-content: center; /* Centers items */
+}
+It also accepts values like 
+flex-start, 
+flex-end, 
+space-between, 
+space-around,
+ space-evenly.
+
+ 3. flex-wrap: It allows the items to wrap onto multiple lines or stay within a single line.
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Wraps items to the next line if needed */
+}
+The nowrap (default) and wrap-reverse are also available options.
+
+4. align-items: This aligns flex items on the cross axis
+.container {
+  display: flex;
+  align-items: center; /* Aligns items vertically in the center */
+}
+
+You can also use 
+flex-start, 
+flex-end, 
+stretch,  
+baseline.
+
+5. align-content: This property aligns the flex lines within the container when there is extra space on the cross-axis.
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around; /* Distributes space around lines */
+}
+Other values include 
+flex-start, 
+flex-end, 
+center, 
+space-between, 
+stretch.
+
+6. align-self: Allows the default alignment (or the one specified by align-items) to be overridden for individual flex items.
+.item {
+  align-self: center; /* Aligns this item only in the center */
+}
+Similar to align-items, it accepts flex-start, flex-end, stretch, baseline, and auto.
+
+Here’s a combined example using all these properties:
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-around;
+}
+
+.item1 {
+  align-self: flex-start;
+}
+
+.item2 {
+  align-self: flex-end;
+}
+
