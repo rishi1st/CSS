@@ -1,54 +1,145 @@
-*{
-          margin: 0;padding: 0;box-sizing: border-box;
-            font-family: "Poppins", sans-serif;
+* {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: "Poppins", sans-serif;
 }
-.main_box{
-  background-image: url('dulhan1.jpg');
-  height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+
+.main_box {
+          background-image: url('dulhan.jpg');
+          height: 100vh;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
 }
 
 
-.btn_one{
-          color:white;
+.btn_one i{
+          color: white;
           font-size: 30px;
           font-weight: 700;
           position: absolute;
           left: 16px;
-          line-height: 60px;
+          line-height: 50px;
+          cursor: pointer;
+          transition: all 0.4s linear;
+          -webkit-transition: all 0.4s linear;
+          -moz-transition: all 0.4s linear;
+          -ms-transition: all 0.4s linear;
+          -o-transition: all 0.4s linear;
+}
 
+.sidebar_menu {
+            position: fixed;
+            left: -300px;
+            height: 100vh;
+            width: 300px;
+            background-color: rgba(239, 135, 135, 0.285);
+            box-shadow: 0px 0px 6px #FF1313;
+            transition: all 0.5s linear;
+            -webkit-transition: all 0.5s linear;
+            -moz-transition: all 0.5s linear;
+            -ms-transition: all 0.5s linear;
+            -o-transition: all 0.5s linear;
 }
-.sidebar_menu{
-          position: fixed;
-          height: 100vh;
-          width: 300px;
-          background-color: rgba(239, 135, 135, 0.285);
-          box-shadow: 0px 0px 6px #FF1313;
-          
+
+.sidebar_menu .logo {
+          position: absolute;
+          width: 100%;
+          line-height: 50px;
+          box-shadow: 0px 0px 4px #FF1313;
 }
-.sidebar_menu .logo{
-    position: absolute;
-    width: 100%;
-    line-height: 50px;
-    box-shadow: 0px 0px 4px #FF1313;
+
+.sidebar_menu .logo a {
+          position: absolute;
+          left: 50px;
+          color: yellowgreen;
+          text-decoration: none;
+          font-weight: bold;
+          font-size: 20px;
+          cursor: pointer;
 }
-.sidebar_menu .logo a{
-                 position: absolute;
-                 left: 50px;
-                 color: yellowgreen;
-                 text-decoration: none;
-                 font-weight: bold;
-                 font-size: 20px;
+
+.sidebar_menu .btn_two i {
+          color: red;
+          font-size: 25px;
+          line-height: 60px;
+          position: absolute;
+          left: 270px;
+          opacity: 0;
+          cursor: pointer;
+          transition: all 0.5s linear;
+          -webkit-transition: all 0.5s linear;
+          -moz-transition: all 0.5s linear;
+          -ms-transition: all 0.5s linear;
+          -o-transition: all 0.5s linear;
 }
-.sidebar_menu .btn_two{
-    color: red;
-    font-size: 25px;
-    line-height: 60px;
-    position: absolute;
-    left: 270px;
+
+.sidebar_menu .menu {
+          position: absolute;
+          width: 100%;
+          top: 60px;
 }
-.sidebar_menu .menu{
-    position: absolute;
+
+.sidebar_menu .menu li {
+          margin-top: 5px;
+          padding: 10px 15px;
+          list-style: none;
+}
+
+.sidebar_menu .menu i,
+a {
+          color: wheat;
+          text-decoration: none;
+          font-size: 20px;
+          cursor: default;
+}
+
+.sidebar_menu .menu i {
+          padding-right: 10px;
+}
+
+.sidebar_menu .social_media {
+          position: absolute;
+          left: 25%;
+          bottom: 20px;
+}
+
+.sidebar_menu .social_media i {
+          color: rgb(24, 24, 20);
+          opacity: 0.5;
+          padding: 0 5px;
+          transition: color 0.3s ease, font-size 0.3s ease, opacity 0.3s ease;
+}
+
+#check {
+          display: none;
+}
+
+.sidebar_menu .menu li:hover {
+          box-shadow: 0px 0px 8px #FF1313;
+         
+}
+
+.btn_one i:hover {
+          font-size: 32px;
+          /* color: yellowgreen; */
+          cursor: pointer;
+}
+.btn_two i:hover{
+          font-size: 30px;
+}
+.social_media i:hover{
+          color: wheat;
+          font-size: 22px;
+          opacity: 1;
+}
+#check:checked ~ .sidebar_menu{
+          left: 0px;
+}
+#check:checked ~ .btn_one i{
+          opacity: 0;
+}
+#check:checked ~ .sidebar_menu .btn_two i{
+          opacity: 1;
 }
