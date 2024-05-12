@@ -26,8 +26,29 @@
           width: 300px;
           background-color: rgba(239, 135, 135, 0.285);
           box-shadow: 0px 0px 6px #FF1313;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-direction: column;
+          
+}
+.sidebar_menu .logo{
+    position: absolute;
+    width: 100%;
+    line-height: 50px;
+    box-shadow: 0px 0px 4px #FF1313;
+}
+.sidebar_menu .logo a{
+                 position: absolute;
+                 left: 50px;
+                 color: yellowgreen;
+                 text-decoration: none;
+                 font-weight: bold;
+                 font-size: 20px;
+}
+.sidebar_menu .btn_two{
+    color: red;
+    font-size: 25px;
+    line-height: 60px;
+    position: absolute;
+    left: 270px;
+}
+.sidebar_menu .menu{
+    position: absolute;
 }
