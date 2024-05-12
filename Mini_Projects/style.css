@@ -2,8 +2,24 @@
           margin: 0;padding: 0;box-sizing: border-box;
             font-family: "Poppins", sans-serif;
 }
-.main-box{
+.main_box{
           background-image: url('dulhan.jpg');
           height: 100vh;
           background-size: cover;
+}
+.btn_one{
+          color:white;
+          font-size: 30px;
+          font-weight: 700;
+          position: absolute;
+          left: 16px;
+          line-height: 60px;
+
+}
+.sidebar_menu{
+          position: fixed;
+          height: 100vh;
+          width: 300px;
+          background-color: rgba(255,255,255,0.4);
+          boxs
 }
